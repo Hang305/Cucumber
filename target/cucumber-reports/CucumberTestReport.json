@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-18T11:20:03.303Z",
+        "line": 10,
+        "name": "Verify title is displayed correctly",
+        "description": "",
+        "id": "this-is-test-scenario;verify-title-is-displayed-correctly;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6878755200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open sign up page",
+            "match": {
+              "location": "SignUpSteps.openSignUpPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"Common.HelperAction.equals(Object, Object)\" because \"this.helperAction\" is null\r\n\tat Steps.LoginSteps.theTitleIsDisplayedCorrectlyTitle(LoginSteps.java:25)\r\n\tat ✽.The title is displayed correctly \"Sign Up\"(file:src/test/resources/feature/SignUp.feature:7)\r\n",
+              "duration": 1664026900,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "The title is displayed correctly \"Sign Up\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign Up\"",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginSteps.theTitleIsDisplayedCorrectlyTitle(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SU01_Title"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-03-18T11:20:11.868Z",
+        "line": 13,
+        "name": "Verify all fields is blank data",
+        "description": "",
+        "id": "this-is-test-scenario;verify-all-fields-is-blank-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102778900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Open sign up page",
+            "match": {
+              "location": "SignUpSteps.openSignUpPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1101388700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enters blank data for all fields",
+            "match": {
+              "location": "SignUpSteps.iEntersBlankDataForAllFields()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 88154500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on the Sign up button",
+            "match": {
+              "location": "SignUpSteps.iClickOnTheSignUpButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 200335400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The error message is displayed correctly with first name, last name, email, password and confirm password",
+            "match": {
+              "location": "SignUpSteps.theErrorMessageIsDisplayedCorrectlyWithFirstNameLastNameEmailPasswordAndConfirmPassword()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SU03_Blank"
+          }
+        ]
+      }
+    ],
+    "name": "This is test scenario",
+    "description": "  I want sign up into IResource website",
+    "id": "this-is-test-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/SignUp.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Suite" parallel="false">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="IResource">
+
+        <classes>
+<!--            <class name="Test.SignUpTest"/>-->
+            <class name="Test.LoginTest"/>
+
+        </classes>
+    </test>
+<!--    Browser Firefox-->
+<!--    <test name="IResource Firefox Test">-->
+<!--        <parameter name="browser" value="browser"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="ParallelBrowser.SameTestDifferentBrowsers"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--&lt;!&ndash;    Browser Chrome&ndash;&gt;-->
+<!--    <test name="IResource Chrome Test">-->
+<!--        <parameter name="browser" value="browser"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="ParallelBrowser.SameTestDifferentBrowsers"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--&lt;!&ndash;    Browser Safari&ndash;&gt;-->
+<!--    <test name="IResource Safari Test">-->
+<!--        <parameter name="browser" value="browser"/>-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="ParallelBrowser.SameTestDifferentBrowsers"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
