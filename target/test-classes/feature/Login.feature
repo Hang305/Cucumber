@@ -17,39 +17,54 @@ Feature: This is test scenario
       | Hello and welcome ! |
 
   @LG03_Blank
-  Scenario: Verify all fields is blank data
+  Scenario Outline: Verify all fields is blank data
     Given Open login page
     And I enters blank data for the email field
     When I click on the Login button
-    Then The error message is displayed correctly with email and password fields
+    Then The error message of email and password fields is displayed correctly with "<message>" content
+    Examples:
+      | message   |
+      | Required! |
 
   @LG04_EMAIL_NOT_ALREADY_ON_DB
-  Scenario: Verify email field is NOT already on DB
+  Scenario Outline: Verify email field is NOT already on DB
     Given Open login page
     And I enters the email not already on DB
     When I click on the Login button
-    Then The modal alert is displayed correctly
+    Then The modal alert is displayed correctly with "<message>" content
+    Examples:
+      | message   |
+      | Email or password is invalid. |
 
   @LG05_Password_NotAlreadyOnDB
-  Scenario: Verify password field is NOT already on DB
+  Scenario Outline: Verify password field is NOT already on DB
     Given Open login page
     And I enters password field with input data has not already on DB
     When I click on the Login button
-    Then The modal alert is displayed correctly
+    Then The modal alert is displayed correctly with "<message>" content
+    Examples:
+      | message   |
+      | Email or password is invalid. |
 
   @LG06_Email_InvalidFormat
-  Scenario: Check email field with input data invalid format
+  Scenario Outline: Check email field with input data invalid format
     Given Open login page
     And I enters email field with input data invalid format
     When I click on the Login button
-    Then The error message of email field is displayed correctly
+    Then The error message of email field is displayed correctly with "<message>" content
+    Examples:
+      | message   |
+      | Invalid email format |
 
   @LG07_Password_InvalidLength
-  Scenario: Check password field with input data invalid length
+  Scenario Outline: Check password field with input data invalid length
     Given Open login page
     And I enters password field with input data invalid length
     When I click on the Login button
-    Then The error message of password field is displayed correctly
+    Then The error message of password field is displayed correctly with "<message>" content
+    Examples:
+      | message   |
+      | Minimum 5 characters |
 
   @LG08_Valid_data
   Scenario: Verify on entering data to all fields

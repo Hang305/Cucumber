@@ -34,8 +34,8 @@ public class LoginDrivenDataTest extends BaseTest {
 
     @Test(dataProvider = "userData")
     public void testUserDataCollection(Login userData) {
-//        helperAction.equals(userData.getEmail(),loginPage.emailErrorElem());
-//        helperAction.equals(userData.getPassword(),loginPage.passwordErrorElem());
+        helperAction.equals(userData.getEmail(),loginPage.emailErrorElem());
+        helperAction.equals(userData.getPassword(),loginPage.passwordErrorElem());
     }
 
     private static void testFromObjectToJson() {

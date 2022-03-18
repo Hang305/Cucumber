@@ -18,19 +18,21 @@ public class LoginSteps extends BaseTest {
     public void openLoginPage() {
         driver.get(BASE_URL);
         helperAction = new HelperAction(driver);
+        loginPage.clear();
     }
 
     @Then("The title is displayed correctly {string}")
-    public void theTitleIsDisplayedCorrectlyTitle( String title) {
+    public void theTitleIsDisplayedCorrectlyTitle(String title) {
         helperAction.equals(loginPage.titleElem(), title);
     }
+
     @Then("The description is displayed correctly {string}")
     public void theDescriptionIsDisplayedCorrectly(String description) {
         helperAction.equals(loginPage.descriptionElem(), description);
     }
+
     @And("I enters the email not already on DB")
     public void iEntersTheEmailNotAlreadyOnDB() {
-        loginPage.clear();
         loginPage.loginPage("ha@gmail.com", "123456");
     }
 
@@ -39,14 +41,14 @@ public class LoginSteps extends BaseTest {
         loginPage.clickOnLoginBtn();
     }
 
-    @Then("The modal alert is displayed correctly")
-    public void theModalAlertIsDisplayedCorrectly() throws InterruptedException {
+    @Then("The modal alert is displayed correctly with {string} content")
+    public void theModalAlertIsDisplayedCorrectlyWithContent(String msg) throws InterruptedException {
         Thread.sleep(2000);
-        helperAction.equals(loginPage.modalAlertElem(), "Email or password is invalid.");
+        helperAction.equals(loginPage.modalAlertElem(), msg);
     }
+
     @And("I enters password field with input data has not already on DB")
     public void iEntersPasswordFieldWithInputDataHasNotAlreadyOnDB() throws InterruptedException {
-        loginPage.clear();
         Thread.sleep(2000);
         loginPage.loginPage("hanglee305+persona5@gmail.com", "3454543");
     }
@@ -63,37 +65,34 @@ public class LoginSteps extends BaseTest {
         loginPage.loginPage("", "");
     }
 
-    @Then("The error message is displayed correctly with email and password fields")
-    public void theErrorMessageIsDisplayedCorrectlyWithEmailAndPasswordFields() {
-        helperAction.equals(loginPage.emailErrorElem(), "Required!");
-        helperAction.equals(loginPage.passwordErrorElem(), "Required!");
+    @Then("The error message of email and password fields is displayed correctly with {string} content")
+    public void theErrorMessageOfEmailAndPasswordFieldsIsDisplayedCorrectlyWithContent(String msg) {
+        helperAction.equals(loginPage.emailErrorElem(), msg);
+        helperAction.equals(loginPage.passwordErrorElem(), msg);
     }
 
     @And("I enters the mandatory fields with email and password fields")
     public void iEntersTheMandatoryFieldsWithEmailAndPasswordFields() {
-        loginPage.clear();
         loginPage.loginPage("hanglee305+persona5@gmail.com", "123456");
     }
 
     @And("I enters email field with input data invalid format")
     public void iEntersEmailFieldWithInputDataInvalidFormat() {
-        loginPage.clear();
         loginPage.loginPage("hang@gmail", "123456");
     }
 
-    @Then("The error message of email field is displayed correctly")
-    public void theErrorMessageOfEmailFieldIsDisplayedCorrectly() {
-        helperAction.equals(loginPage.emailErrorElem(), "Invalid email format");
+    @Then("The error message of email field is displayed correctly with {string} content")
+    public void theErrorMessageOfEmailFieldIsDisplayedCorrectlyWithContent(String msg) {
+        helperAction.equals(loginPage.emailErrorElem(), msg);
     }
 
     @And("I enters password field with input data invalid length")
     public void iEntersPasswordFieldWithInputDataInvalidLength() {
-        loginPage.clear();
         loginPage.loginPage("hang@gmail.com", "12");
     }
 
-    @Then("The error message of password field is displayed correctly")
-    public void theErrorMessageOfPasswordFieldIsDisplayedCorrectly() throws InterruptedException {
+    @Then("The error message of password field is displayed correctly with {string} content")
+    public void theErrorMessageOfPasswordFieldIsDisplayedCorrectlyWithContent(String msg) throws InterruptedException {
         Thread.sleep(2000);
         helperAction.equals(loginPage.passwordErrorElem(), "Minimum 5 characters");
     }

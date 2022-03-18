@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.Random;
+
 public class SignUpPage extends BasePage implements Urls {
     private final WebDriver driver;
     HelperAction helperAction;
@@ -122,5 +124,10 @@ public class SignUpPage extends BasePage implements Urls {
         helperAction.clear(emailSel);
         helperAction.clear(passwordSel);
         helperAction.clear(confirmPasswordSel);
+    }
+    public int randomNumber() {
+        Random random = new Random();
+        int randomNumber = random.nextInt();
+        return randomNumber;
     }
 }

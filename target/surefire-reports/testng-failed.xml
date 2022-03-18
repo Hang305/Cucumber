@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="Test.SignUpTest">
+        <methods>
+          <include name="TC06_Email_InvalidData"/>
+          <include name="TC07_Password_InvalidData"/>
+          <include name="TC03_Blank"/>
+          <include name="afterTest"/>
+          <include name="TC09_SignUpSuccess"/>
+          <include name="TC04_FirstName_InvalidData"/>
+          <include name="TC08_ConfirmPassword_NotMatch"/>
+          <include name="beforeTest"/>
+          <include name="init"/>
+          <include name="TC02_PersonaIsChecked"/>
+          <include name="TC01_TitleIsDisplayedCorrectly"/>
+          <include name="TC05_LastName_InvalidData"/>
+        </methods>
+      </class> <!-- Test.SignUpTest -->
+      <class name="DrivenData.LoginDrivenDataTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="testUserDataCollection"/>
+        </methods>
+      </class> <!-- DrivenData.LoginDrivenDataTest -->
+      <class name="Test.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Test.TestRunner -->
+      <class name="Test.LoginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC05_Password_InvalidLength"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- Test.LoginTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
