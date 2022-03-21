@@ -12,9 +12,9 @@ public class SignUp {
         this.password= password;
     }
 
-    public SignUp(String lastName, String firstName, String email, String password, String confirmPassword) {
-        this.lastName = lastName;
+    public SignUp(String firstName, String lastName, String email, String password, String confirmPassword) {
         this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.confirmPassword = confirmPassword;
@@ -38,5 +38,13 @@ public class SignUp {
 
     public String getConfirmPassword() {
         return confirmPassword;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String domainMail(String email){
+        String[] domainOfMail = email.split("@");
+        return domainOfMail[0];
     }
 }

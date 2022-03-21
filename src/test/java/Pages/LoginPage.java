@@ -2,15 +2,17 @@ package Pages;
 
 import Common.HelperAction;
 import Common.Urls;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage extends BasePage implements Urls {
-
     private final WebDriver driver;
     HelperAction helperAction;
+    ExplorePage explorePage;
+
     @FindBy(tagName = "h2")
     public WebElement titleSel;
 
@@ -22,6 +24,9 @@ public class LoginPage extends BasePage implements Urls {
 
     @FindBy(name = "password")
     public WebElement passwordSel;
+
+    @FindBy(css = "#password[type='text']")
+    public WebElement showTextPasswordSel;
 
     @FindBy(css = ".login-form-submit button[type='submit']")
     public WebElement loginBtnSel;
@@ -44,29 +49,35 @@ public class LoginPage extends BasePage implements Urls {
     @FindBy(css = ".directional-signup a")
     public WebElement signupLinkSel;
 
+    @FindBy(className = "show-password")
+    public WebElement showPasswordEyeSel;
+
+
     public LoginPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         this.driver.get(BASE_URL);
         PageFactory.initElements(driver, this);
         helperAction = new HelperAction(driver);
+        explorePage = new ExplorePage(driver);
     }
 
     public void login(String email, String password) {
-        helperAction.getValue(emailSel,email);
-        helperAction.getValue(passwordSel,password);
+        helperAction.getValue(emailSel, email);
+        helperAction.getValue(passwordSel, password);
         clickOnLoginBtn();
     }
+
     public void loginPage(String email, String password) {
-        helperAction.getValue(emailSel,email);
-        helperAction.getValue(passwordSel,password);
+        helperAction.getValue(emailSel, email);
+        helperAction.getValue(passwordSel, password);
     }
 
     public void clickOnLoginBtn() {
         loginBtnSel.click();
     }
 
-    public void clickOnSignUpBtn() {
+    public void clickOnSignUpLink() {
         signupLinkSel.click();
     }
 
@@ -94,8 +105,16 @@ public class LoginPage extends BasePage implements Urls {
         return rememberSel.isSelected();
     }
 
+    public boolean checkShowTextPassword(){
+        return showTextPasswordSel.isDisplayed();
+    }
+    public void showPasswordEye(){
+        showPasswordEyeSel.click();
+    }
+
     public void clear() {
         helperAction.clear(emailSel);
         helperAction.clear(passwordSel);
     }
+
 }

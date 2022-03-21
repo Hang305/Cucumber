@@ -29,9 +29,7 @@ Feature: This is test scenario
   @LG04_EMAIL_NOT_ALREADY_ON_DB
   Scenario Outline: Verify email field is NOT already on DB
     Given Open login page
-    And I enters the email not already on DB
-    When I click on the Login button
-    Then The modal alert is displayed correctly with "<message>" content
+    Then The modal alert is displayed correctly with "<message>" content for email field not already on DB read from file excel
     Examples:
       | message   |
       | Email or password is invalid. |
@@ -39,9 +37,7 @@ Feature: This is test scenario
   @LG05_Password_NotAlreadyOnDB
   Scenario Outline: Verify password field is NOT already on DB
     Given Open login page
-    And I enters password field with input data has not already on DB
-    When I click on the Login button
-    Then The modal alert is displayed correctly with "<message>" content
+    Then The modal alert is displayed correctly with "<message>" content for password field not already on DB read from file excel
     Examples:
       | message   |
       | Email or password is invalid. |
@@ -49,9 +45,7 @@ Feature: This is test scenario
   @LG06_Email_InvalidFormat
   Scenario Outline: Check email field with input data invalid format
     Given Open login page
-    And I enters email field with input data invalid format
-    When I click on the Login button
-    Then The error message of email field is displayed correctly with "<message>" content
+    Then The error message of email field is displayed correctly with "<message>" content for invalid data read from file excel
     Examples:
       | message   |
       | Invalid email format |
@@ -59,22 +53,29 @@ Feature: This is test scenario
   @LG07_Password_InvalidLength
   Scenario Outline: Check password field with input data invalid length
     Given Open login page
-    And I enters password field with input data invalid length
-    When I click on the Login button
-    Then The error message of password field is displayed correctly with "<message>" content
+    Then The error message of password field is displayed correctly with "<message>" content for invalid data read from file excel
     Examples:
       | message   |
       | Minimum 5 characters |
 
   @LG08_Valid_data
   Scenario: Verify on entering data to all fields
-    Given Open login page
-    And I enters the mandatory fields with email and password fields
-    When I click on the Login button
-    Then The Explore page is displayed
+    Then User login account successfully with valid data for the mandatory fields reading from file excel
 
   @LG09_Default_Remember
   Scenario: Verify the default remember is checked
     Given Open login page
     Then The checkbox of remember is checked
+
+  @LG10_Show_Password_Test
+  Scenario: Verify the password is displayed with type text
+    Given Open login page
+    When Enter input data password and click on the Eye icon
+    Then The password field is displayed with type text
+
+  @LG011_SignUpLink
+    Scenario: Verify the Sign up hyperlink is active
+      Given Open login page
+      When Click on the sign up hyperlink
+      Then The Sign up page is displayed
 

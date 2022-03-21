@@ -1,0 +1,241 @@
+[ {
+  "uid" : "ee36d6a591649e47",
+  "name" : "Check first name field with input data invalid data",
+  "time" : {
+    "start" : 1647825790830,
+    "stop" : 1647825800384,
+    "duration" : 9554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7f8a892c56e6111",
+  "name" : "Verify the Sign up hyperlink is active",
+  "time" : {
+    "start" : 1647825950323,
+    "stop" : 1647825958204,
+    "duration" : 7881
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95f8cdbdc207d75a",
+  "name" : "Verify email field is NOT already on DB",
+  "time" : {
+    "start" : 1647825722179,
+    "stop" : 1647825734751,
+    "duration" : 12572
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8b9be82724996371",
+  "name" : "Check password field with input data invalid data",
+  "time" : {
+    "start" : 1647825815338,
+    "stop" : 1647825827475,
+    "duration" : 12137
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "949da7d34864568",
+  "name" : "Verify all fields is blank data",
+  "time" : {
+    "start" : 1647825786911,
+    "stop" : 1647825790824,
+    "duration" : 3913
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "394685a888d428c5",
+  "name" : "Verify all fields is blank data",
+  "time" : {
+    "start" : 1647825718946,
+    "stop" : 1647825722066,
+    "duration" : 3120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab1a87b7c5668598",
+  "name" : "Verify title is displayed correctly",
+  "time" : {
+    "start" : 1647825706965,
+    "stop" : 1647825716417,
+    "duration" : 9452
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea84341a94c36e78",
+  "name" : "Verify the default of checkbox is the checked persona",
+  "time" : {
+    "start" : 1647825783306,
+    "stop" : 1647825786795,
+    "duration" : 3489
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6575f3634464473",
+  "name" : "Check email field with input data invalid format",
+  "time" : {
+    "start" : 1647825746711,
+    "stop" : 1647825750862,
+    "duration" : 4151
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "28baad5c2af5378f",
+  "name" : "Verify sign up success with valid all the fields",
+  "time" : {
+    "start" : 1647825839892,
+    "stop" : 1647825950317,
+    "duration" : 110425
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3db5bea48010090c",
+  "name" : "Verify the Sign up hyperlink is active",
+  "time" : {
+    "start" : 1647825771550,
+    "stop" : 1647825779457,
+    "duration" : 7907
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4ebd2ff1cb66c78f",
+  "name" : "Verify the default remember is checked",
+  "time" : {
+    "start" : 1647788257021,
+    "stop" : 1647788260398,
+    "duration" : 3377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bed8678a09fa12f7",
+  "name" : "Verify on entering data to all fields",
+  "time" : {
+    "start" : 1647825756634,
+    "stop" : 1647825765247,
+    "duration" : 8613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "98df5a834bd1a4bf",
+  "name" : "Check email field with input data invalid data",
+  "time" : {
+    "start" : 1647825810290,
+    "stop" : 1647825815223,
+    "duration" : 4933
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52bcca44f505681b",
+  "name" : "Check password field with input data invalid length",
+  "time" : {
+    "start" : 1647825750870,
+    "stop" : 1647825756503,
+    "duration" : 5633
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8441b2e1b70986b4",
+  "name" : "Check last name field with input data invalid data",
+  "time" : {
+    "start" : 1647825800485,
+    "stop" : 1647825810262,
+    "duration" : 9777
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a336df655f87e5ec",
+  "name" : "Check confirm password field with input data invalid data",
+  "time" : {
+    "start" : 1647825827482,
+    "stop" : 1647825839885,
+    "duration" : 12403
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "143db37db5583e55",
+  "name" : "Verify title is displayed correctly",
+  "time" : {
+    "start" : 1647825779579,
+    "stop" : 1647825783209,
+    "duration" : 3630
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8313ec5941ef9010",
+  "name" : "Verify the default remember is checked",
+  "time" : {
+    "start" : 1647825765261,
+    "stop" : 1647825767871,
+    "duration" : 2610
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2976688653a49d8f",
+  "name" : "Verify the Sign up hyperlink is active",
+  "time" : {
+    "start" : 1647788264712,
+    "stop" : 1647788272789,
+    "duration" : 8077
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3b6e17156dd4718",
+  "name" : "Verify password field is NOT already on DB",
+  "time" : {
+    "start" : 1647825734757,
+    "stop" : 1647825746699,
+    "duration" : 11942
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7f07ebd978b63955",
+  "name" : "Verify the password is displayed with type text",
+  "time" : {
+    "start" : 1647825768330,
+    "stop" : 1647825771424,
+    "duration" : 3094
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e7f8c05e9dc22b5",
+  "name" : "Verify the password is displayed with type text",
+  "time" : {
+    "start" : 1647788260403,
+    "stop" : 1647788264157,
+    "duration" : 3754
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "552c9d74f1906ffc",
+  "name" : "Verify description is displayed correctly",
+  "time" : {
+    "start" : 1647825716521,
+    "stop" : 1647825718938,
+    "duration" : 2417
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

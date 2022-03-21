@@ -1,26 +1,23 @@
 package Test;
 
-import Common.DataObjectBuilder;
 import Common.HelperAction;
-import Models.Login;
+import DrivenData.TestDataLoginProvider;
 import Pages.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.Iterator;
 
 public class LoginTest extends BaseTest {
     LoginPage loginPage = new LoginPage(driver);
+    TestDataLoginProvider loginValidDataTest = new TestDataLoginProvider(driver);
 
     //TC01: Email and password is blank
-    @BeforeClass
+    @BeforeMethod
     public void init() {
         driver.get(BASE_URL);
         helperAction = new HelperAction(driver);
+        loginPage.clear();
     }
+
     @Test
     public void TC01_Blank() throws InterruptedException {
         loginPage.login("", "");
@@ -32,7 +29,6 @@ public class LoginTest extends BaseTest {
     //TC02: Input email NOT already on DB
     @Test
     public void TC02_Email_NotAlreadyOnDB() throws InterruptedException {
-        loginPage.clear();
         loginPage.login("ha@gmail.com", "123456");
         Thread.sleep(2000);
         helperAction.equals(loginPage.modalAlertElem(), "Email or password is invalid.");
@@ -41,7 +37,6 @@ public class LoginTest extends BaseTest {
     //TC03:  Input password is NOT already on DB
     @Test
     public void TC03_Password_NotAlreadyOnDB() throws InterruptedException {
-        loginPage.clear();
         loginPage.login("hanglee305+persona5@gmail.com", "18272");
         Thread.sleep(3000);
 //        WebDriverWait wait = new WebDriverWait(driver, 10L);
@@ -52,7 +47,6 @@ public class LoginTest extends BaseTest {
     //TC04: Login with invalid format of email
     @Test
     public void TC04_Email_InvalidFormat() throws InterruptedException {
-        loginPage.clear();
         loginPage.login("ha@gmail", "1234");
         Thread.sleep(3000);
         helperAction.equals(loginPage.emailErrorElem(), "Invalid email format");
@@ -61,17 +55,16 @@ public class LoginTest extends BaseTest {
     //TC05: Login with invalid length of password
     @Test
     public void TC05_Password_InvalidLength() throws InterruptedException {
-        loginPage.clear();
+//        loginPage.clear();
         loginPage.login("ha@gmail.com", "12");
         Thread.sleep(3000);
         helperAction.equals(loginPage.passwordErrorElem(), "Minimum 5 characters");
     }
 
-    //TC06: Login with valid data
+    //TC06: Login success with valid data
     @Test
     public void TC06_Success() throws InterruptedException {
-        loginPage.clear();
-        loginPage.login("hanglee305+persona5@gmail.com", "123456");
+        loginValidDataTest.LoginTestDataValidData();
     }
 
     //TC07: Get title
@@ -92,19 +85,11 @@ public class LoginTest extends BaseTest {
         helperAction.equals(loginPage.checkRememberElem(), false);
     }
 
-//    @DataProvider()
-//    public Login[] userData(){
-//        String jsonFileLocation = "/src/test/resources/test-data/Json/login.json";
-//        return DataObjectBuilder.buildDataObjectFrom(jsonFileLocation, Login[].class);
-//    }
-//
-//    @Test(dataProvider = "userData")
-//    public void testUserDataCollection(Login userData) {
-//        Assert.assertTrue(userData.getEmail().startsWith("T"), "[ERR] name is not started with T");
-//        Assert.assertTrue(userData.getPassword().length() <=2 , "[ERR] Password ");
-//    }
-    @AfterClass
-    public void tearDown(){
-        this.driver.quit();
+    //TC10: show password eye
+    @Test
+    public void TC10_showPasswordEye() {
+        loginPage.loginPage("ha@gmail", "1234");
+        loginPage.showPasswordEye();
+        helperAction.equals(loginPage.checkShowTextPassword(), true);
     }
 }

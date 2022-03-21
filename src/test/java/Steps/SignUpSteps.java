@@ -1,20 +1,23 @@
 package Steps;
 
 import Common.HelperAction;
+import DrivenData.TestDataSignUpProvider;
+import Pages.LoginPage;
 import Pages.SignUpPage;
 import Test.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.annotations.AfterClass;
 
 import java.util.Arrays;
 import java.util.List;
 
 public class SignUpSteps extends BaseTest {
     SignUpPage signUp = new SignUpPage(driver);
+    TestDataSignUpProvider testDataSignUp = new TestDataSignUpProvider(driver);
     HelperAction helperAction;
+    LoginPage loginpage = new LoginPage(driver);
 
     @Given("Open sign up page")
     public void openSignUpPage() {
@@ -42,6 +45,7 @@ public class SignUpSteps extends BaseTest {
     public void iClickOnTheSignUpButton() {
         signUp.clickOnSignUpBtn();
     }
+
     @Then("The error message of all fields is displayed correctly with {string} content")
     public void theErrorMessageOfAllFieldsIsDisplayedCorrectlyWithContent(String msg) {
         List<String> expectedMessageTest = Arrays.asList(msg, msg, msg, msg, msg);
@@ -49,69 +53,48 @@ public class SignUpSteps extends BaseTest {
         helperAction.equals(actualMessageTest, expectedMessageTest);
     }
 
-    @And("I enters blank data for first name field")
-    public void iEntersBlankDataForFirstNameField() {
-        signUp.signUpPage("34", "", "", "", "");
-    }
-    @Then("The error message is displayed correctly with first name field with {string} content")
-    public void theErrorMessageIsDisplayedCorrectlyWithFirstNameFieldWithContent(String msg) {
-        helperAction.equals(signUp.firstNameErrorELem(), msg);
+    @Then("The error message is displayed correctly with {string} content for input invalid data of first name field read from file excel")
+    public void theErrorMessageIsDisplayedCorrectlyWithContentForInputInvalidDataOfFirstNameFieldReadFromFileExcel(String msg) {
+        testDataSignUp.FirstNameInvalidDataTest(msg);
     }
 
-    @And("I enters invalid data for first name field")
-    public void iEntersInvalidDataForFirstNameField() {
-        signUp.signUpPage("","34","","","");
+    @Then("The error message is displayed correctly  with {string} content for invalid data of last name field read from file excel")
+    public void theErrorMessageIsDisplayedCorrectlyWithContentForInvalidDataOfLastNameFieldReadFromFileExcel(String msg) {
+        testDataSignUp.LastNameInvalidDataTest(msg);
     }
 
-    @Then("The error message is displayed correctly with last name field with {string} content")
-    public void theErrorMessageIsDisplayedCorrectlyWithLastNameFieldWithContent(String msg) {
-        helperAction.equals(signUp.lastnameErrorELem(),msg);
+    @Then("The error message of email field is displayed correctly with {string} content for invalid data of email field read from file excel")
+    public void theErrorMessageOfEmailFieldIsDisplayedCorrectlyWithContentForInvalidDataOfEmailFieldReadFromFileExcel(String msg) {
+        testDataSignUp.EmailInvalidDataTest(msg);
     }
 
-    @And("I enters invalid data for email field")
-    public void iEntersInvalidDataForEmailField() {
-        signUp.signUpPage("","","ha@gmail","","");
+    @Then("The error message is displayed correctly with {string} content for invalid data of the password field read from file excel")
+    public void theErrorMessageIsDisplayedCorrectlyWithContentForInvalidDataOfThePasswordFieldReadFromFileExcel(String msg) {
+        testDataSignUp.PasswordInvalidDataTest(msg);
     }
 
-    @Then("The error message is displayed correctly with email field with {string} content")
-    public void theErrorMessageIsDisplayedCorrectlyWithEmailFieldWithContent(String message) {
-        helperAction.equals(signUp.emailErrorElem(),message);
+    @Then("The error message is displayed correctly with {string} content for invalid data of the confirm password field read from file excel")
+    public void theErrorMessageIsDisplayedCorrectlyWithContentForInvalidDataOfTheConfirmPasswordFieldReadFromFileExcel(String msg) {
+        testDataSignUp.ConfirmPasswordInvalidDataTest(msg);
     }
 
-    @And("I enters invalid data for password field")
-    public void iEntersInvalidDataForPasswordField() {
-        signUp.signup("","","","ha12","");
+    @Then("User login successfully with input valid all the fields and verify email success")
+    public void userLoginSuccessfullyWithInputValidAllTheFieldsAndVerifyEmailSuccess() throws InterruptedException {
+        testDataSignUp.SignUpTestDataValidData();
     }
 
-    @Then("The error message is displayed correctly with password field with {string} content")
-    public void theErrorMessageIsDisplayedCorrectlyWithPasswordFieldWithContent(String msg) {
-        helperAction.equals(signUp.passwordErrorElem(),msg);
+    @When("Click on the login hyperlink")
+    public void clickOnTheLoginHyperlink() {
+        signUp.clickOnLoginLink();
     }
 
-    @And("I enters invalid data for confirm password field")
-    public void iEntersInvalidDataForConfirmPasswordField() {
-        signUp.signup("","","","","23");
+    @Then("The login page is displayed")
+    public void theLoginPageIsDisplayed() throws InterruptedException {
+        Thread.sleep(5000);
+        helperAction.equals(driver.getCurrentUrl(), BASE_URL.concat(LOGIN));
+//        loginpage.clickOnSignUpLink();
     }
 
-    @Then("The error message is displayed correctly with confirm password field with {string} content")
-    public void theErrorMessageIsDisplayedCorrectlyWithConfirmPasswordFieldWithContent(String msg) {
-        helperAction.equals(signUp.confirmPasswordErrorELem(),msg);
-    }
-
-    @And("I enters valid data for all fields")
-    public void iEntersValidDataForAllFields() {
-        String email = "hang.le" + signUp.randomNumber();
-        signUp.signup("Hang","test",email+ "@mailsac.com","Ha123@","Ha123@");
-    }
-
-    @Then("The Verify Email page is displayed correctly")
-    public void theVerifyEmailPageIsDisplayedCorrectly() {
-        helperAction.equals(driver.getCurrentUrl(),BASE_URL.concat(VERIFY_EMAIL));
-    }
-    @AfterClass
-    public void tearDown(){
-        this.driver.quit();
-    }
 
 
 }

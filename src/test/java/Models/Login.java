@@ -1,10 +1,6 @@
 package Models;
 
-import Common.DataObjectBuilder;
-import Models.Login;
-import org.testng.annotations.DataProvider;
-
-public class Login extends SignUp{
+public class Login extends SignUp {
     private String email;
     private String password;
 
@@ -37,5 +33,4 @@ public class Login extends SignUp{
                 ", password='" + password + '\'' +
                 '}';
     }
-
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IResource"
+           tests="11"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="93.319">
+  <properties />
+  
+  
+            <testcase name="runScenario" time="4.008" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="3.050" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="13.300" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="13.483" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="7.605" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="4.319" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="8.765" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="4.356" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="21.346" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="9.538" classname="LoginTestRunner" />
+                <testcase name="runScenario" time="3.549" classname="LoginTestRunner" />
+      
+</testsuite>

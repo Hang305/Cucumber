@@ -1,8 +1,10 @@
 package Steps;
 
 import Common.HelperAction;
+import DrivenData.TestDataLoginProvider;
 import Pages.ExplorePage;
 import Pages.LoginPage;
+import Pages.SignUpPage;
 import Test.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,6 +15,8 @@ public class LoginSteps extends BaseTest {
     LoginPage loginPage = new LoginPage(driver);
     HelperAction helperAction;
     ExplorePage explorePage = new ExplorePage(driver);
+    TestDataLoginProvider loginDataTest = new TestDataLoginProvider(driver);
+    SignUpPage  signUpPage = new SignUpPage(driver);
 
     @Given("Open login page")
     public void openLoginPage() {
@@ -31,26 +35,14 @@ public class LoginSteps extends BaseTest {
         helperAction.equals(loginPage.descriptionElem(), description);
     }
 
-    @And("I enters the email not already on DB")
-    public void iEntersTheEmailNotAlreadyOnDB() {
-        loginPage.loginPage("ha@gmail.com", "123456");
+    @Then("The modal alert is displayed correctly with {string} content for email field not already on DB read from file excel")
+    public void theModalAlertIsDisplayedCorrectlyWithContentForEmailFieldNotAlreadyOnDBReadFromFileExcel(String msg) throws InterruptedException {
+        loginDataTest.DataNotAlreadyOnDBTest(msg);
     }
 
-    @When("I click on the Login button")
-    public void iClickOnTheLoginButton() {
-        loginPage.clickOnLoginBtn();
-    }
-
-    @Then("The modal alert is displayed correctly with {string} content")
-    public void theModalAlertIsDisplayedCorrectlyWithContent(String msg) throws InterruptedException {
-        Thread.sleep(2000);
-        helperAction.equals(loginPage.modalAlertElem(), msg);
-    }
-
-    @And("I enters password field with input data has not already on DB")
-    public void iEntersPasswordFieldWithInputDataHasNotAlreadyOnDB() throws InterruptedException {
-        Thread.sleep(2000);
-        loginPage.loginPage("hanglee305+persona5@gmail.com", "3454543");
+    @Then("The modal alert is displayed correctly with {string} content for password field not already on DB read from file excel")
+    public void theModalAlertIsDisplayedCorrectlyWithContentForPasswordFieldNotAlreadyOnDBReadFromFileExcel(String msg) throws InterruptedException {
+        loginDataTest.DataNotAlreadyOnDBTest(msg);
     }
 
     @Then("The Explore page is displayed")
@@ -64,41 +56,56 @@ public class LoginSteps extends BaseTest {
     public void iEntersBlankDataForTheEmailField() {
         loginPage.loginPage("", "");
     }
-
+    @When("I click on the Login button")
+    public void iClickOnTheLoginButton() {
+        loginPage.clickOnLoginBtn();
+    }
     @Then("The error message of email and password fields is displayed correctly with {string} content")
     public void theErrorMessageOfEmailAndPasswordFieldsIsDisplayedCorrectlyWithContent(String msg) {
         helperAction.equals(loginPage.emailErrorElem(), msg);
         helperAction.equals(loginPage.passwordErrorElem(), msg);
     }
 
-    @And("I enters the mandatory fields with email and password fields")
-    public void iEntersTheMandatoryFieldsWithEmailAndPasswordFields() {
-        loginPage.loginPage("hanglee305+persona5@gmail.com", "123456");
+    @Then("User login account successfully with valid data for the mandatory fields reading from file excel")
+    public void userLoginAccountSuccessfullyWithValidDataForTheMandatoryFieldsReadingFromFileExcel() throws InterruptedException {
+        loginDataTest.LoginTestDataValidData();
     }
 
-    @And("I enters email field with input data invalid format")
-    public void iEntersEmailFieldWithInputDataInvalidFormat() {
-        loginPage.loginPage("hang@gmail", "123456");
+    @Then("The error message of email field is displayed correctly with {string} content for invalid data read from file excel")
+    public void theErrorMessageOfEmailFieldIsDisplayedCorrectlyWithContentForInvalidDataReadFromFileExcel(String msg) {
+        loginDataTest.EmailInvalidDataTest(msg);
     }
 
-    @Then("The error message of email field is displayed correctly with {string} content")
-    public void theErrorMessageOfEmailFieldIsDisplayedCorrectlyWithContent(String msg) {
-        helperAction.equals(loginPage.emailErrorElem(), msg);
-    }
-
-    @And("I enters password field with input data invalid length")
-    public void iEntersPasswordFieldWithInputDataInvalidLength() {
-        loginPage.loginPage("hang@gmail.com", "12");
-    }
-
-    @Then("The error message of password field is displayed correctly with {string} content")
-    public void theErrorMessageOfPasswordFieldIsDisplayedCorrectlyWithContent(String msg) throws InterruptedException {
-        Thread.sleep(2000);
-        helperAction.equals(loginPage.passwordErrorElem(), "Minimum 5 characters");
+    @Then("The error message of password field is displayed correctly with {string} content for invalid data read from file excel")
+    public void theErrorMessageOfPasswordFieldIsDisplayedCorrectlyWithContentForInvalidDataReadFromFileExcel(String msg) {
+        loginDataTest.PasswordInvalidLengthDataTest(msg);
     }
 
     @Then("The checkbox of remember is checked")
     public void theCheckboxOfRememberIsChecked() {
         helperAction.equals(loginPage.checkRememberElem(), false);
+    }
+
+    @When("Click on the sign up hyperlink")
+    public void clickOnTheSignUpHyperlink() {
+        loginPage.clickOnSignUpLink();
+    }
+
+    @Then("The Sign up page is displayed")
+    public void theSignUpPageIsDisplayed() throws InterruptedException {
+        Thread.sleep(5000);
+        helperAction.equals(driver.getCurrentUrl(), BASE_URL.concat(SIGNUP));
+        signUpPage.clickOnLoginLink();
+    }
+
+    @When("Enter input data password and click on the Eye icon")
+    public void enterInputDataPasswordAndClickOnTheEyeIcon() {
+        loginPage.loginPage("ha@gmail", "1234");
+        loginPage.showPasswordEye();
+    }
+
+    @Then("The password field is displayed with type text")
+    public void thePasswordFieldIsDisplayedWithTypeText() {
+        helperAction.equals(loginPage.checkShowTextPassword(), true);
     }
 }

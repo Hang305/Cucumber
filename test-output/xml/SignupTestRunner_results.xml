@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IResource"
+           tests="10"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="95.181">
+  <properties />
+            <testcase name="runScenario" time="19.233" classname="SignupTestRunner">
+                <failure type="org.junit.ComparisonFailure"
+                  message="expected:&lt;...esource.smartdev.vn/[signup]&gt; but was:&lt;...esource.smartdev.vn/[verify-email]&gt;"
+              >
+<![CDATA[org.junit.ComparisonFailure: expected:<...esource.smartdev.vn/[signup]> but was:<...esource.smartdev.vn/[verify-email]>
+  org.junit.Assert.assertEquals(Assert.java:115)
+  org.junit.Assert.assertEquals(Assert.java:144)
+  Common.HelperAction.equals(HelperAction.java:46)
+  DrivenData.TestDataSignUpProvider.SignUpTestDataValidData(TestDataSignUpProvider.java:192)
+  Steps.SignUpSteps.userLoginSuccessfullyWithInputValidAllTheFieldsAndVerifyEmailSuccess(SignUpSteps.java:83)
+  ✽.User login successfully with input valid all the fields and verify email success(file:src/test/resources/feature/SignUp.feature:72)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="runScenario" time="4.627" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="11.905" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="12.633" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="8.386" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="4.079" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="12.393" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="3.983" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="11.768" classname="SignupTestRunner" />
+                <testcase name="runScenario" time="6.174" classname="SignupTestRunner" />
+      
+</testsuite>

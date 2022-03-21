@@ -1,0 +1,1695 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Sunshine",
+    "children" : [ {
+      "name" : "6544@Sunshine.main(1)",
+      "children" : [ {
+        "name" : "Verify the default remember is checked",
+        "uid" : "bb33e4aeb7535767",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823869937,
+          "stop" : 1647823873034,
+          "duration" : 3097
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify description is displayed correctly",
+        "uid" : "273367343ea29783",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823806073,
+          "stop" : 1647823809914,
+          "duration" : 3841
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Hello and welcome !" ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "c517a26daf24bf8",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823809960,
+          "stop" : 1647823816124,
+          "duration" : 6164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify the password is displayed with type text",
+        "uid" : "e6b1a46216c35bbb",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823873040,
+          "stop" : 1647823876750,
+          "duration" : 3710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check last name field with input data invalid data",
+        "uid" : "617a579d9bb2ba44",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823905781,
+          "stop" : 1647823915791,
+          "duration" : 10010
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "695a200115b1c087",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823891519,
+          "stop" : 1647823895591,
+          "duration" : 4072
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Check password field with input data invalid length",
+        "uid" : "5061efd4163157fc",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823854400,
+          "stop" : 1647823860673,
+          "duration" : 6273
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Minimum 5 characters" ]
+      }, {
+        "name" : "Check password field with input data invalid data",
+        "uid" : "259428b2aaa7b484",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823921193,
+          "stop" : 1647823935557,
+          "duration" : 14364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "At least one uppercase, one number and one special case character" ]
+      }, {
+        "name" : "Verify password field is NOT already on DB",
+        "uid" : "bbe9d6f625bcadf9",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823835788,
+          "stop" : 1647823850129,
+          "duration" : 14341
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Check confirm password field with input data invalid data",
+        "uid" : "866ecbfd0c42e009",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823935564,
+          "stop" : 1647823959779,
+          "duration" : 24215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Password doesn’t match" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "af07d12cbc3b4a9c",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823885104,
+          "stop" : 1647823888355,
+          "duration" : 3251
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Sign Up" ]
+      }, {
+        "name" : "Check first name field with input data invalid data",
+        "uid" : "8f22613090e5ae2",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823895601,
+          "stop" : 1647823905749,
+          "duration" : 10148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify the default of checkbox is the checked persona",
+        "uid" : "4318095b64fd7230",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823888387,
+          "stop" : 1647823891514,
+          "duration" : 3127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "f2d6fc3b02a6c103",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823787733,
+          "stop" : 1647823805655,
+          "duration" : 17922
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Log In" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "de96a1fac97555a2",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823876775,
+          "stop" : 1647823884888,
+          "duration" : 8113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify sign up success with valid all the fields",
+        "uid" : "33a937bea0db1296",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823959832,
+          "stop" : 1647824071988,
+          "duration" : 112156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify email field is NOT already on DB",
+        "uid" : "c5d7a3bda008d977",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823816135,
+          "stop" : 1647823834919,
+          "duration" : 18784
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Check email field with input data invalid data",
+        "uid" : "5c3da8392a1b6fd4",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823915832,
+          "stop" : 1647823921147,
+          "duration" : 5315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify on entering data to all fields",
+        "uid" : "faf173fa5d6c701d",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823860698,
+          "stop" : 1647823869729,
+          "duration" : 9031
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check email field with input data invalid format",
+        "uid" : "2b0bb692ab7fd03a",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823850160,
+          "stop" : 1647823854234,
+          "duration" : 4074
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "687d64dbe51d7788",
+        "parentUid" : "84022534930f6b841a53b243ee6f2550",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647824071995,
+          "stop" : 1647824079893,
+          "duration" : 7898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84022534930f6b841a53b243ee6f2550"
+    }, {
+      "name" : "2488@Sunshine.main(1)",
+      "children" : [ {
+        "name" : "Verify the default remember is checked",
+        "uid" : "8313ec5941ef9010",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825765261,
+          "stop" : 1647825767871,
+          "duration" : 2610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check last name field with input data invalid data",
+        "uid" : "8441b2e1b70986b4",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825800485,
+          "stop" : 1647825810262,
+          "duration" : 9777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify sign up success with valid all the fields",
+        "uid" : "28baad5c2af5378f",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825839892,
+          "stop" : 1647825950317,
+          "duration" : 110425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check confirm password field with input data invalid data",
+        "uid" : "a336df655f87e5ec",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825827482,
+          "stop" : 1647825839885,
+          "duration" : 12403
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Password doesn’t match" ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "949da7d34864568",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825786911,
+          "stop" : 1647825790824,
+          "duration" : 3913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Check email field with input data invalid data",
+        "uid" : "98df5a834bd1a4bf",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825810290,
+          "stop" : 1647825815223,
+          "duration" : 4933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify the password is displayed with type text",
+        "uid" : "7f07ebd978b63955",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825768330,
+          "stop" : 1647825771424,
+          "duration" : 3094
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "143db37db5583e55",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825779579,
+          "stop" : 1647825783209,
+          "duration" : 3630
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ "Sign Up" ]
+      }, {
+        "name" : "Verify password field is NOT already on DB",
+        "uid" : "a3b6e17156dd4718",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825734757,
+          "stop" : 1647825746699,
+          "duration" : 11942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "394685a888d428c5",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825718946,
+          "stop" : 1647825722066,
+          "duration" : 3120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify description is displayed correctly",
+        "uid" : "552c9d74f1906ffc",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825716521,
+          "stop" : 1647825718938,
+          "duration" : 2417
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Hello and welcome !" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "ab1a87b7c5668598",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825706965,
+          "stop" : 1647825716417,
+          "duration" : 9452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Log In" ]
+      }, {
+        "name" : "Verify on entering data to all fields",
+        "uid" : "bed8678a09fa12f7",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825756634,
+          "stop" : 1647825765247,
+          "duration" : 8613
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check password field with input data invalid length",
+        "uid" : "52bcca44f505681b",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825750870,
+          "stop" : 1647825756503,
+          "duration" : 5633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Minimum 5 characters" ]
+      }, {
+        "name" : "Verify the default of checkbox is the checked persona",
+        "uid" : "ea84341a94c36e78",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825783306,
+          "stop" : 1647825786795,
+          "duration" : 3489
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check password field with input data invalid data",
+        "uid" : "8b9be82724996371",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825815338,
+          "stop" : 1647825827475,
+          "duration" : 12137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ "At least one uppercase, one number and one special case character" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "c7f8a892c56e6111",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825950323,
+          "stop" : 1647825958204,
+          "duration" : 7881
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check email field with input data invalid format",
+        "uid" : "6575f3634464473",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825746711,
+          "stop" : 1647825750862,
+          "duration" : 4151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Check first name field with input data invalid data",
+        "uid" : "ee36d6a591649e47",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825790830,
+          "stop" : 1647825800384,
+          "duration" : 9554
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify email field is NOT already on DB",
+        "uid" : "95f8cdbdc207d75a",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825722179,
+          "stop" : 1647825734751,
+          "duration" : 12572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "3db5bea48010090c",
+        "parentUid" : "8093428b63d34bb731e1a1238f8b0003",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647825771550,
+          "stop" : 1647825779457,
+          "duration" : 7907
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 3,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8093428b63d34bb731e1a1238f8b0003"
+    }, {
+      "name" : "12436@Sunshine.main(1)",
+      "children" : [ {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "362f0ba263149065",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1647788433168,
+          "stop" : 1647788441408,
+          "duration" : 8240
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check email field with input data invalid data",
+        "uid" : "f809ab780426872f",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788297557,
+          "stop" : 1647788302910,
+          "duration" : 5353
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Check last name field with input data invalid data",
+        "uid" : "4d00d8225edce579",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788290559,
+          "stop" : 1647788297529,
+          "duration" : 6970
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Check password field with input data invalid length",
+        "uid" : "7b06b6acefe6a911",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788241638,
+          "stop" : 1647788247804,
+          "duration" : 6166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Minimum 5 characters" ]
+      }, {
+        "name" : "Check first name field with input data invalid data",
+        "uid" : "4674e7cfac798529",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788283996,
+          "stop" : 1647788290548,
+          "duration" : 6552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify sign up success with valid all the fields",
+        "uid" : "7e031b67299b2868",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788323161,
+          "stop" : 1647788433161,
+          "duration" : 110000
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check email field with input data invalid format",
+        "uid" : "c0f20cd3887b70f6",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788237235,
+          "stop" : 1647788241630,
+          "duration" : 4395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify the default of checkbox is the checked persona",
+        "uid" : "706aefd21a883013",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788276388,
+          "stop" : 1647788280039,
+          "duration" : 3651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check confirm password field with input data invalid data",
+        "uid" : "6195917728238264",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788315625,
+          "stop" : 1647788323147,
+          "duration" : 7522
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Password doesn’t match" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "2cc723e0b06b4f0c",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788186702,
+          "stop" : 1647788203339,
+          "duration" : 16637
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Log In" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "14c70146a616add4",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788273019,
+          "stop" : 1647788276305,
+          "duration" : 3286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Sign Up" ]
+      }, {
+        "name" : "Verify the password is displayed with type text",
+        "uid" : "5e7f8c05e9dc22b5",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788260403,
+          "stop" : 1647788264157,
+          "duration" : 3754
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify email field is NOT already on DB",
+        "uid" : "6b137416fea383a3",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788209992,
+          "stop" : 1647788224408,
+          "duration" : 14416
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Verify password field is NOT already on DB",
+        "uid" : "a0eee42d012d47b2",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788224416,
+          "stop" : 1647788237227,
+          "duration" : 12811
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Verify on entering data to all fields",
+        "uid" : "f9cd6adfc93c7c63",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788247827,
+          "stop" : 1647788257010,
+          "duration" : 9183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify description is displayed correctly",
+        "uid" : "7dd574e9b70e1d76",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788203499,
+          "stop" : 1647788206321,
+          "duration" : 2822
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Hello and welcome !" ]
+      }, {
+        "name" : "Verify the default remember is checked",
+        "uid" : "4ebd2ff1cb66c78f",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788257021,
+          "stop" : 1647788260398,
+          "duration" : 3377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "2771e3080220976e",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788206333,
+          "stop" : 1647788209982,
+          "duration" : 3649
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "2976688653a49d8f",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788264712,
+          "stop" : 1647788272789,
+          "duration" : 8077
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "ba361672033937a2",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788280047,
+          "stop" : 1647788283989,
+          "duration" : 3942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Check password field with input data invalid data",
+        "uid" : "a02eaf5e2a36ec48",
+        "parentUid" : "95e2d2c266f1d73710e043cdb42b718c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647788303014,
+          "stop" : 1647788315618,
+          "duration" : 12604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "At least one uppercase, one number and one special case character" ]
+      } ],
+      "uid" : "95e2d2c266f1d73710e043cdb42b718c"
+    }, {
+      "name" : "18256@Sunshine.main(1)",
+      "children" : [ {
+        "name" : "Check email field with input data invalid data",
+        "uid" : "c8cdc684c6c00804",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791384297,
+          "stop" : 1647791392093,
+          "duration" : 7796
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "ca71b9abc09c0705",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791209487,
+          "stop" : 1647791237208,
+          "duration" : 27721
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Log In" ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "d28f4d9cdb3bbab7",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791241642,
+          "stop" : 1647791246925,
+          "duration" : 5283
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify email field is NOT already on DB",
+        "uid" : "faff9bceaf5bfbf8",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791246939,
+          "stop" : 1647791266947,
+          "duration" : 20008
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Check last name field with input data invalid data",
+        "uid" : "c001a2efe344dfe9",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791373977,
+          "stop" : 1647791384212,
+          "duration" : 10235
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "a4178c4e4ab76c0c",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791333374,
+          "stop" : 1647791348029,
+          "duration" : 14655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "b765cbb0e96b73b",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791359001,
+          "stop" : 1647791364903,
+          "duration" : 5902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify the default remember is checked",
+        "uid" : "ef4d79b5672a6fad",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791323918,
+          "stop" : 1647791328001,
+          "duration" : 4083
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check first name field with input data invalid data",
+        "uid" : "9eb0d3a9332e3264",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791364938,
+          "stop" : 1647791373967,
+          "duration" : 9029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Please enter valid name" ]
+      }, {
+        "name" : "Verify on entering data to all fields",
+        "uid" : "6d9dfba63bfdcf36",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791312592,
+          "stop" : 1647791323878,
+          "duration" : 11286
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check password field with input data invalid data",
+        "uid" : "a7699edcc12c2bea",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791392099,
+          "stop" : 1647791409488,
+          "duration" : 17389
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "At least one uppercase, one number and one special case character" ]
+      }, {
+        "name" : "Check password field with input data invalid length",
+        "uid" : "9ffa8cecbad6a18f",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791291374,
+          "stop" : 1647791312554,
+          "duration" : 21180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Minimum 5 characters" ]
+      }, {
+        "name" : "Check email field with input data invalid format",
+        "uid" : "2b486a1cd1b2d2c1",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791283835,
+          "stop" : 1647791291331,
+          "duration" : 7496
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify the default of checkbox is the checked persona",
+        "uid" : "5fc19c8277f574ca",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791354536,
+          "stop" : 1647791358988,
+          "duration" : 4452
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "92e2b8d13febacb1",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791349804,
+          "stop" : 1647791354511,
+          "duration" : 4707
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Sign Up" ]
+      }, {
+        "name" : "Verify the password is displayed with type text",
+        "uid" : "4a3ab0634c4970ea",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791328012,
+          "stop" : 1647791333286,
+          "duration" : 5274
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify sign up success with valid all the fields",
+        "uid" : "c7a12e0aa9340700",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791419009,
+          "stop" : 1647791553027,
+          "duration" : 134018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify description is displayed correctly",
+        "uid" : "913cb78fa5ec40f0",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791237814,
+          "stop" : 1647791241595,
+          "duration" : 3781
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Hello and welcome !" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "d73474d5c792ad06",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791553060,
+          "stop" : 1647791563013,
+          "duration" : 9953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check confirm password field with input data invalid data",
+        "uid" : "d1e8cdbec407d614",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791409499,
+          "stop" : 1647791418997,
+          "duration" : 9498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Password doesn’t match" ]
+      }, {
+        "name" : "Verify password field is NOT already on DB",
+        "uid" : "352cbfa5fc57d856",
+        "parentUid" : "4e87a930f411c21aedc9f3cc6d97c436",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647791267032,
+          "stop" : 1647791283822,
+          "duration" : 16790
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      } ],
+      "uid" : "4e87a930f411c21aedc9f3cc6d97c436"
+    }, {
+      "name" : "15464@Sunshine.main(1)",
+      "children" : [ {
+        "name" : "Verify the default of checkbox is the checked persona",
+        "uid" : "44ad1fed3ec9eb71",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "broken",
+        "time" : {
+          "start" : 1647823706240,
+          "stop" : 1647823720809,
+          "duration" : 14569
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "ca38e3bdc459e391",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823611079,
+          "stop" : 1647823616161,
+          "duration" : 5082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify the password is displayed with type text",
+        "uid" : "c1f89e315db499",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823678843,
+          "stop" : 1647823683766,
+          "duration" : 4923
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify the default remember is checked",
+        "uid" : "45a2575b1c17129e",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823675113,
+          "stop" : 1647823678816,
+          "duration" : 3703
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify password field is NOT already on DB",
+        "uid" : "4976bca73f93cada",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823633432,
+          "stop" : 1647823648499,
+          "duration" : 15067
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Verify on entering data to all fields",
+        "uid" : "a9aa84e19aea785e",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823664942,
+          "stop" : 1647823675096,
+          "duration" : 10154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify all fields is blank data",
+        "uid" : "cc5c25ad47f2b516",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "broken",
+        "time" : {
+          "start" : 1647823720947,
+          "stop" : 1647823737472,
+          "duration" : 16525
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Required!" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "f4ee3319e942f905",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823587430,
+          "stop" : 1647823606605,
+          "duration" : 19175
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Log In" ]
+      }, {
+        "name" : "Verify the Sign up hyperlink is active",
+        "uid" : "34febc3405cd5a2b",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823683846,
+          "stop" : 1647823692415,
+          "duration" : 8569
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Check email field with input data invalid format",
+        "uid" : "d5b10bf955557a28",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823648507,
+          "stop" : 1647823656001,
+          "duration" : 7494
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Invalid email format" ]
+      }, {
+        "name" : "Verify title is displayed correctly",
+        "uid" : "3034d08c9b582b68",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "broken",
+        "time" : {
+          "start" : 1647823692677,
+          "stop" : 1647823706216,
+          "duration" : 13539
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Sign Up" ]
+      }, {
+        "name" : "Verify email field is NOT already on DB",
+        "uid" : "9a9f78ea948834e0",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823616202,
+          "stop" : 1647823633265,
+          "duration" : 17063
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Email or password is invalid." ]
+      }, {
+        "name" : "Check password field with input data invalid length",
+        "uid" : "5b28ac5084a1ffae",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823656010,
+          "stop" : 1647823664883,
+          "duration" : 8873
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Minimum 5 characters" ]
+      }, {
+        "name" : "Verify description is displayed correctly",
+        "uid" : "92c1e6296e8c896d",
+        "parentUid" : "f3e828893ed057048d14f94b32c23384",
+        "status" : "passed",
+        "time" : {
+          "start" : 1647823607425,
+          "stop" : 1647823610969,
+          "duration" : 3544
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "Hello and welcome !" ]
+      } ],
+      "uid" : "f3e828893ed057048d14f94b32c23384"
+    } ],
+    "uid" : "cee192cd9524a7eee52e39cc6698f34f"
+  } ]
+}

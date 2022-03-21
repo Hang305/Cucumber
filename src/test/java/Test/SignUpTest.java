@@ -14,6 +14,7 @@ import java.util.Random;
 
 public class SignUpTest extends BaseTest{
     SignUpPage signUpPage = new SignUpPage(driver);
+    VerifyEmailPage verifyEmailPage = new VerifyEmailPage(driver);
     String email;
 
     // TC01: title is displayed correctly
@@ -86,9 +87,8 @@ public class SignUpTest extends BaseTest{
         signUpPage.clear();
         email = "hang.le" + randomNumber();
         signUpPage.signup("Hang","test",email+ "@mailsac.com","Ha123@","Ha123@");
-        Thread.sleep(10000);
+        Thread.sleep(15000);
         helperAction.equals(driver.getCurrentUrl(),BASE_URL.concat(VERIFY_EMAIL));
-
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         //chuyến driver đến window con
@@ -96,10 +96,7 @@ public class SignUpTest extends BaseTest{
         js.executeScript("window.open('http://mailsac.com','_blank');");
         ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
         driver.switchTo().window(tabs.get(1));
-
-        VerifyEmailPage verifyEmailPage = new VerifyEmailPage(driver);
-        System.out.println(this.driver.getCurrentUrl());
-        System.out.println(email);
+        Thread.sleep(3000);
         verifyEmailPage.enterEmailName(email);
 
         Thread.sleep(4000);
@@ -107,10 +104,10 @@ public class SignUpTest extends BaseTest{
         verifyEmailPage.openMail();
         Thread.sleep(2000);
         String strCode = verifyEmailPage.getCode();
-
         // Switch to old tab to enter the code
         driver.switchTo().window(tabs.get(0));
-        verifyEmailPage.enterCode(strCode);
+        Thread.sleep(2000);
+        verifyEmailPage.enterCode(strCode, email, "password");
     }
     public int randomNumber() {
         Random random = new Random();
